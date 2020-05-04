@@ -16,4 +16,4 @@ RUN flask init-db
 
 EXPOSE 5000
 
-CMD [ "flask", "run" ]
+CMD [ "flask", "run", "0.0.0.0:5000" ]
