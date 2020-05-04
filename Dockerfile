@@ -7,8 +7,6 @@ COPY . /app
 
 WORKDIR /app
 
-RUN pip install
-
 RUN flask init-db
 
 # Unit tests
