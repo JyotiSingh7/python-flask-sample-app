@@ -7,7 +7,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN pip install --editable .
+RUN pip install
 
 RUN flask init-db
 
@@ -16,7 +16,7 @@ RUN flask init-db
 
 EXPOSE 5000
 
-CMD [ "flask", "run", "--host=0.0.0.0" ]
+CMD [ "flask", "run"]
 
 
 
