@@ -7,7 +7,9 @@ COPY . /app
 
 WORKDIR /app
 
-RUN flask init db
+RUN pip install -r requirements.txt
+
+RUN flask init-db
 
 # Unit tests
 # RUN pip install pytest && pytest
