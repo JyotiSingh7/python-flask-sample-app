@@ -7,7 +7,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN flask init-db
+RUN flask init db
 
 # Unit tests
 # RUN pip install pytest && pytest
